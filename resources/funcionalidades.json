@@ -1,0 +1,26 @@
+{
+  "cloned_from": "NetAnts 1.25 (1998-2004) - analizado via RecStudio dump",
+  "description": "NetAnts Reborn - funcionalidades enumeradas",
+  "features": {
+    "interface_cloned": [
+      "MainFrame 1024x600 icono hormiga XPM 32x32",
+      "Toolbar flat 16x16 Nuevo/Iniciar/Pausar/Borrar/Propiedades/Opciones",
+      "Splitter Tree categorias + ListCtrl 8 columnas",
+      "StatusBar 3 panes con animacion hormigas 8 frames",
+      "Dialog Agregar URL validacion http/https/ftp",
+      "Dialog Opciones General + Proxy"
+    ],
+    "download_logic_modernized": [
+      "HTTP/HTTPS via libcurl + cpr",
+      "FTP/FTPS via libcurl",
+      "HEAD para Content-Length via CURLOPT_NOBODY",
+      "Segmentacion dinamica 1-16 .part files",
+      "Range: bytes=start-end y RESUME_FROM_LARGE",
+      "curl_multi_perform + curl_multi_wait 200ms",
+      "Merge final ofstream + remove .part",
+      "Pausa abortando via progress callback",
+      "Resume leyendo file_size .part",
+      "Velocidad instantanea y ETA"
+    ]
+  }
+}
